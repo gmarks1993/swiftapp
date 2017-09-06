@@ -21,25 +21,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bob" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-a2-roD">
-                                <rect key="frame" x="27" y="191" width="266" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bob" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icc-a2-roD">
+                                <rect key="frame" x="146" y="28" width="29" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnD-F6-7p4">
-                                <rect key="frame" x="90" y="282" width="140" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Push Me!"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnD-F6-7p4">
+                                <rect key="frame" x="128" y="65" width="64" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Push Me!">
+                                    <color key="titleShadowColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTR-Oy-umm"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RIq-Rw-5Bz">
+                                <rect key="frame" x="110" y="143" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PtJ-Vu-lno"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmN-5M-lym">
+                                <rect key="frame" x="109.5" y="202" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EQq-re-wqt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RIq-Rw-5Bz" firstAttribute="top" secondItem="ZnD-F6-7p4" secondAttribute="bottom" constant="48" id="1be-dM-g2w"/>
+                            <constraint firstItem="NmN-5M-lym" firstAttribute="top" secondItem="RIq-Rw-5Bz" secondAttribute="bottom" constant="29" id="5oC-bd-dRZ"/>
+                            <constraint firstItem="NmN-5M-lym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KP2-X3-9F0"/>
+                            <constraint firstItem="RIq-Rw-5Bz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SvC-Z0-701"/>
+                            <constraint firstItem="Icc-a2-roD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="YQ2-Kz-dw0"/>
+                            <constraint firstItem="ZnD-F6-7p4" firstAttribute="top" secondItem="Icc-a2-roD" secondAttribute="bottom" constant="17" id="dAu-g0-JwL"/>
+                            <constraint firstItem="Icc-a2-roD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fmL-OO-YIg"/>
+                            <constraint firstItem="RIq-Rw-5Bz" firstAttribute="top" secondItem="ZnD-F6-7p4" secondAttribute="bottom" constant="48" id="mVw-7B-CiX"/>
+                            <constraint firstItem="ZnD-F6-7p4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ow2-0Z-nel"/>
+                            <constraint firstItem="RIq-Rw-5Bz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uRX-6H-jW3"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="RIq-Rw-5Bz" id="j3r-nP-kQS"/>
+                        <outlet property="text2" destination="NmN-5M-lym" id="3GP-dH-WgX"/>
                         <outlet property="theLabel" destination="Icc-a2-roD" id="vH5-jS-cb8"/>
                     </connections>
                 </viewController>
