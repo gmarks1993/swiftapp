@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Grant Marks on 9/5/17.
-//  Copyright © 2017 Grant Marks. All rights reserved.
+//  Copyright © 2017 Grant Marks. All rights reserved...
 //
 
 import UIKit
